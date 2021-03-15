@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movimiento del div</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body onmousemove="position(event)">
+
+	<div class="body" onclick="mover();">
+		<div class="pecera"></div>
+			<div class="cd" id="caja">
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			cdiv=document.getElementById('caja');
+
+			var x = 0;
+			var y = 0;
+
+function position(event) {
+
+	 x=event.clientX;
+	 y=event.clientY;
+
+	
+
+console.log("x: "+ x + "  " +"y: "+ y);
+
+}
+
+function mover() {
+
+
+	var xd = x - 50;
+	var yd = y - 50;
+
+
+	if (xd>450 && (xd + 100)<950 && yd>100 && (yd + 100)<600) {
+
+cdiv.style.top = yd + "px";
+cdiv.style.left = xd + "px";
+
+	
+
+}
+
+}
+
+		</script>
+
+</body>
+</html>

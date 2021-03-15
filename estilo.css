@@ -1,0 +1,42 @@
+.body
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+	width: 100%; 
+	height: 100%;
+	background-color: #1693F5;
+	background-size: cover;
+
+}
+
+.cd
+{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	width: 100px; 
+	height: 100px;
+	background-image: url("pez.png");
+	transition: 0.5s;
+	border-radius: 30px;	
+	background-size: cover;
+
+}
+
+.pecera{
+	position: absolute;
+	left: 450px;
+	top: 100px;
+	width: 500px; 
+	height: 500px;
+	border-radius: 30px;	
+	box-shadow: 5px 5px 5px black;
+	background-image: url("fondo.jpg");
+	background-size: cover;
+	border: gray 15px double;
+
+
+}
+
+
